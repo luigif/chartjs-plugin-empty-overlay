@@ -119,7 +119,7 @@
         beforeInit: function(chartInstance) {
 
             // Merge config
-            var emptyOpts = chartInstance.options.emptyOverlay || {};
+            var emptyOpts = chartInstance.config.emptyOverlay || {};
             emptyOpts = helpers.configMerge(Chart.defaults.global.emptyOverlay,
                 emptyOpts);
 
@@ -139,7 +139,7 @@
         afterDatasetsDraw: function(chartInstance) {
 
             // Merge config
-            var emptyOpts = chartInstance.options.emptyOverlay || {};
+            var emptyOpts = chartInstance.config.emptyOverlay || {};
             emptyOpts = helpers.configMerge(Chart.defaults.global.emptyOverlay,
                 emptyOpts);
 
